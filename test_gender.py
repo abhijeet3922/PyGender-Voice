@@ -24,7 +24,7 @@ def get_MFCC(sr,audio):
     features = preprocessing.scale(features)
     return features
 
-sourcepath = "D:\\test_data\\female_clips\\"          #path to testing data
+sourcepath = "D:\\AudioSet\\test_data\\female_clips\\"          #path to testing data
 modelpath  = "D:\\gender_models\\"      #path to saved models
 
 gmm_files = [os.path.join(modelpath,fname) for fname in 
