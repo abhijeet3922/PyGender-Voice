@@ -13,8 +13,10 @@ def get_MFCC(sr,audio):
     features = preprocessing.scale(features)
     return features
 
-source   = "D:\\train_data\\male\\"   #path to training data
-dest     = "D:\\gender_models\\"         #path to save trained model
+#path to training data
+source   = "D:\\pygender\\train_data\\male\\"   
+#path to save trained model
+dest     = "D:\\pygender\\"         
 files    = [os.path.join(source,f) for f in os.listdir(source) if 
              f.endswith('.wav')] 
 features = np.asarray(());
