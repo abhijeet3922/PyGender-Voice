@@ -24,8 +24,10 @@ def get_MFCC(sr,audio):
     features = preprocessing.scale(features)
     return features
 
-sourcepath = "D:\\test_data\\AudioSet\\female_clips\\"          #path to testing data
-modelpath  = "D:\\gender_models\\"      #path to saved models
+#path to testing data
+sourcepath = "D:\\pygender\\test_data\\AudioSet\\female_clips\\"      
+#path to saved models    
+modelpath  = "D:\\pygender\\"   
 
 gmm_files = [os.path.join(modelpath,fname) for fname in 
               os.listdir(modelpath) if fname.endswith('.gmm')]
