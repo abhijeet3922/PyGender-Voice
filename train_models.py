@@ -1,7 +1,5 @@
 #train_models.py
 
-#train_models.py
-
 import os
 import cPickle
 import numpy as np
@@ -15,7 +13,7 @@ def get_MFCC(sr,audio):
     features = preprocessing.scale(features)
     return features
 
-source   = "D:\\training_data\\male\\"   #path to training data
+source   = "D:\\train_data\\male\\"   #path to training data
 dest     = "D:\\gender_models\\"         #path to save trained model
 files    = [os.path.join(source,f) for f in os.listdir(source) if 
              f.endswith('.wav')] 
