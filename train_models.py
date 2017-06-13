@@ -16,7 +16,7 @@ def get_MFCC(sr,audio):
     return features
 
 #path to training data
-source   = "D:\\pygender\\train_data\\male\\"   
+source   = "D:\\pygender\\train_data\\youtube\\male\\"   
 #path to save trained model
 dest     = "D:\\pygender\\"         
 files    = [os.path.join(source,f) for f in os.listdir(source) if 
