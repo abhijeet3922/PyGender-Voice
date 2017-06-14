@@ -9,6 +9,7 @@ Test corpus: It has been extracted from "AudioSet", a large scale manually ann
 
 The documentation/tutorial for this repository can be read from this blog.
 
+https://appliedmachinelearning.wordpress.com/2017/06/14/voice-gender-detection-using-gmms-a-python-primer/
 
 
 # Installation
